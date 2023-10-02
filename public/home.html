@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- link the scripts here -->
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.js"></script>
+
+    <!-- Using React18+ new technique -->
+    <script type="text/babel">
+
+        // this function returning some layout
+        function Login() {
+            return (
+                <div>
+                    <h2>User Login</h2>
+                    <d1>
+                        <dt>User Name</dt>
+                        <dd><input type="text" /></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" /></dd>
+                    </d1>
+                    <button>Login</button>
+                </div>
+            )
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        // root.render("Welcome to React Home");	//render the contents in only String.. we cannot format output..
+        root.render(<Login />);
+    </script>
+
+</head>
+
+<body>
+    <div id="root">
+
+    </div>
+</body>
+
+</html>
