@@ -1,0 +1,17 @@
+<script>
+    var categories = ["Electronics", "Footwear", "Fashion"];
+
+    //categories.push("Kids");
+    //after Electronics I want to add item..
+    //categories.splice(1, 0, "Kids"); // where to add at which index, how many to delete and what to add..       
+    categories.splice(1, 0, "Kids", "Women");
+
+    //to remove Footwear from categories..
+    categories.splice(1, 1); //at which index you want to remove, how many to remove..
+
+    categories.map(function (category) {
+
+        document.write(`<a href="#">${category}</a><br>`);
+
+    });
+</script>

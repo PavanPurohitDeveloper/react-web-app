@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Using old technique - React17
+    <script type="text/babel">
+        ReactDOM.render("Welcome to React", document.getElementById("container"));
+    </script> -->
+
+    <!-- Using Rect18+ new technique -->
+    <script type="text/babel">
+        const root = ReactDOM.createRoot(document.getElementById("container"));
+        root.render("Hello ! from React");
+    </script>
+</head>
+
+<body>
+    <h1>Welcome to React</h1>
+    <h1>React web-Application</h1>
+
+    <div id="container">
+
+    </div>
+
+    Departure:
+    <input type="date" />
+</body>
+
+</html>
+
+
+
+<script>
+    var sales = [10000, 46000, 57000, 52000, 24000];
+    var result = sales.find(function (value) {
+        return value > 50000;
+    });
+
+</script>
